@@ -1,0 +1,151 @@
+.sidenav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+}
+
+.sidenav {
+  background: #324089;
+}
+
+.menu-button {
+  background: #324089;
+  width: 100%;
+  text-align: left;
+  color: #a9afbb;
+  &:hover {
+    background: #5e77ff;
+    color: #ffffff;
+    .icon {
+      color: #ffffff;
+    }
+  }
+  .button-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .icon {
+    color: #a9afbb;
+  }
+  .button-text {
+    padding: 10px;
+  }
+}
+
+.float-right {
+  margin-left: auto;
+}
+
+.content {
+  background: #eeeeee;
+}
+
+.article-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  padding: 20px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 26px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  color: #3c4858;
+}
+
+.article-image {
+  width: 100%;
+  margin: -32px 0 16px 0!important;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.statistic-title {
+  text-align: center;
+}
+
+.select-label {
+  color: #4F5A68;
+}
+
+.statistic-card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.date {
+  color: #aaaaaa;
+}
+
+.card-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.statistic-card-link {
+  text-decoration: none;
+}
+
+.statistic-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.statistic-card-image {
+  height: auto;
+  width: auto;
+  position: relative;
+  top: -32px;
+}
+
+.statistic-card-line {
+  border-bottom: 2px solid black;
+}
+
+.statistic-card-number {
+  font-size: 20px;
+  color: #7a7a7a;
+  text-align: right;
+}
+
+.form-field {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+}
+
+::ng-deep .mat-select-arrow {
+  color: #3c4858;
+}
+
+::ng-deep .mat-form-field-outline {
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+  color: #c9c9c9;
+  background: #ffffff;
+}
