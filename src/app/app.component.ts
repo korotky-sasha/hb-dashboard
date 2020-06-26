@@ -34,25 +34,37 @@ export class AppComponent {
       name: 'Employees',
       number: 3100,
       image_src: '/assets/img/Icon1.png',
-      line_color: '#5e77ff'
+      line_color: '#5e77ff',
+      hover: false
     },
     {
       name: 'Contracts',
       number: 2558,
       image_src: '/assets/img/Icon2.png',
-      line_color: '#bd5ee6'
+      line_color: '#bd5ee6',
+      hover: false
     },
     {
       name: 'Documentations',
       number: 455,
       image_src: '/assets/img/Icon3.png',
-      line_color: '#5e77ff'
+      line_color: '#5e77ff',
+      hover: false
     },
     {
       name: 'Consultations',
       number: 1200,
       image_src: '/assets/img/Icon4.png',
-      line_color: '#f44336'
+      line_color: '#f44336',
+      hover: false
     }
   ];
+
+  setShadow(card: Statistic) {
+    return card.hover ? getShadowStyle(card.line_color) : '';
+    function getShadowStyle(color: string) {
+      return `box-shadow: 1px 1px 15px 3px rgba(${parseInt(color.slice(1, 3), 16)}, ` +
+        `${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, 0.5);`;
+    }
+  }
 }

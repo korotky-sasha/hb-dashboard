@@ -8,5 +8,6 @@ export interface Statistic {
   name: string,
   number: number,
   image_src: string,
-  line_color: string
+  line_color: string,
+  hover: boolean
 }

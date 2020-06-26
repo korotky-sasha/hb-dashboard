@@ -1,4 +1,3 @@
-<p>hb-dashboard works!</p>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened class="sidenav">
     <mat-list>
@@ -127,7 +126,12 @@
       </mat-select>
     </mat-form-field>
     <div class="article-container">
-      <mat-card *ngFor="let statistic of statistics" class="article">
+      <mat-card
+        *ngFor="let statistic of statistics"
+        (mouseenter)="statistic.hover = true"
+        (mouseleave)="statistic.hover = false"
+        [style]="setShadow(statistic)"
+        class="statistic-card">
         <mat-card-content>
           <div class="statistic-card-header">
             <img [src]="statistic.image_src" alt="Statistic icon" class="statistic-card-image">
